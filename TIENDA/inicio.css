@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(38, 218, 250);
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "Encabezado"
+    "Menu"
+    "contenido"
+    "Lateral"
+    "Pie";
+
+    @media(min-width: 900px){
+        grid-template:
+        "Encabezado Encabezado Encabezado"100px
+        "Menu       Menu       Menu"50px
+        "contenido  contenido  contenido"10px
+        "Pie        Pie        Pie"50px / 50px auto auto;
+    }
+
+}
+.Encabezado{
+    background-color: #f11414;
+    grid-area: Encabezado ;
+}
+.Menu{
+    background-color: rgb(229, 255, 205);
+    grid-area: Menu;
+}
+.Contenido{
+    background-color:rgb(143, 184, 77);
+    grid-area: contenido;
+}
+.Lateral{
+    background-color: rgb(70, 169, 182);
+    grid-area: Lateral;
+}
+.Pie{
+    background-color: rgb(62, 122, 233);
+    grid-area: Pie;
+}
