@@ -6,7 +6,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: rgb(38, 218, 250);
+    background-color: bisque;
      min-height: 100vh;
 }
 .panel{
@@ -31,7 +31,7 @@ body{
 }
 
 .Encabezado{
-    background-color: rgb(245, 83, 77);
+    background-color: beige;
     grid-area: Encabezado ;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body{
 
 .Mens li a {
     text-decoration: none;
-    color: blue;
+    color: rgb(88, 88, 173);
     font-weight: bold;
     transform: color 0.5s ease;
 }
@@ -80,16 +80,70 @@ body{
 
 }
 .Contenido{
-    background-color:rgb(143, 184, 77);
+    background-color:rgb(250, 250, 249);
     grid-area: contenido;
 }
 
 .Lateral{
-    background-color: rgb(70, 169, 182);
+    background-color: rgb(229, 269, 282);
     grid-area: Lateral;
 }
 
 .Pie{
-    background-color: rgb(62, 122, 233);
+    background-color: rgb(194, 194, 192);
     grid-area: Pie;
+}
+
+/* Diseño de oferta */
+.oferta {
+   margin: 20px; 
+}
+
+.oferta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.cont-tarjetas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: darkgrey;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px black;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color:burlywood;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+.tarjeta button:hover {
+    background-color: rgb(77, 77, 187);
+    color: black;
+}
+
+.tarjeta:hover {
+    transform: translateY(10px);
+
 }
