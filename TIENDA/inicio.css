@@ -124,7 +124,7 @@ body{
 
 .tarjeta img {
     width: 100%;
-    height: auto;
+    height: 50%;
 }
 
 .tarjeta button {
@@ -136,6 +136,7 @@ body{
     text-decoration: none;
     border-radius: 2px;
     transition: background 0.3s;
+    
 }
 
 .tarjeta button:hover {
